@@ -1,0 +1,46 @@
+{
+   "name": "epitech-nodejs-2019",
+   "version": "0.0.1",
+   "description": "Rest api",
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "ts-node": "3.3.0",
+      "tslint": "5.20.0",
+      "tslint-config-airbnb": "5.11.2"
+   },
+   "dependencies": {
+      "@types/bcryptjs": "2.4.2",
+      "@types/body-parser": "1.17.1",
+      "@types/cors": "2.8.6",
+      "@types/helmet": "0.0.44",
+      "@types/jsonwebtoken": "8.3.5",
+      "apidoc": "0.17.7",
+      "bcryptjs": "2.4.3",
+      "body-parser": "^1.18.1",
+      "class-validator": "0.10.2",
+      "cors": "2.8.5",
+      "dotenv": "8.2.0",
+      "express": "^4.15.4",
+      "helmet": "3.21.2",
+      "jsonwebtoken": "8.5.1",
+      "pg": "^7.3.0",
+      "pg-connection-string": "2.1.0",
+      "reflect-metadata": "^0.1.10",
+      "ts-node-dev": "1.0.0-pre.43",
+      "typeorm": "0.2.20",
+      "typescript": "3.3.3333",
+      "ws": "7.2.0"
+   },
+   "scripts": {
+      "tsc": "tsc",
+      "start": "set debug=* && ts-node-dev --respawn --transpileOnly ./src/index.ts",
+      "prod": "tsc && node build/index.js",
+      "migration:run": "ts-node ./node_modules/typeorm/cli.js migration:run",
+      "lint": "tslint --project tsconfig.json",
+      "doc:build": "apidoc -i src/routes -o apidoc",
+      "doc:run": "google-chrome ./apidoc/index.html"
+   },
+   "apidoc": {
+      "title": "Api doc"
+   }
+}
