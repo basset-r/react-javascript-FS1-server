@@ -1,16 +1,24 @@
 # EpitechExpressApi2019
 
+## Links
+
+Api url: <https://guarded-headland-50683.herokuapp.com/></br>
+Docs: <https://guarded-headland-50683.herokuapp.com/docs/></br>
+
 ## Install project
+
+You need npm and nodejs to run this project</br>
+See [this tutorial](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/) to install nodejs and npm with [nmv](https://github.com/nvm-sh/nvm)</br>
 
 `npm install`
 
 ### Dev config
 
-For development env, run `mv .env.exemple .env`
+For development env, run `mv .env.example .env`
 
 ### Prod config
 
-For production, run `mv .env.prod.exemple .env`</br>
+For production, run `mv .env.prod.example .env`</br>
 This will be automatically executing when deployed
 
 ### Start dev mode
@@ -31,7 +39,9 @@ Install apidoc </br>
 Generate documentation </br>
 `npm run doc:build`
 </br>
-File named apidoc will be generated
+File named apidoc will be generated</br>
+
+If the documentation is build, she will be available at yourDomain/docs
 
 ## How to deploy
 
